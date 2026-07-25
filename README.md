@@ -7,9 +7,11 @@ Built a beginner penetration testing lab using Oracle VirtualBox.
 2. Metasploitable 2
 3. Oracle VirtualBox
 4. Nmap
+5. Metasploitable Framework
+(msfconsole)
 
 ## Setup
-Created an isolated Host-only network between Kali Linux and Metasploitable 2.
+Created an isolated Host-only network between Kali Linux and Metasploitable 2 to safely perfome penetration testing exercises in a local lab environment.
 
 ## Completed Tasks
 1. Installed Kali Linux VM
