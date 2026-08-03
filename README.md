@@ -32,8 +32,11 @@ Created an isolated Host-only network between Kali Linux and Metasploitable 2 to
 
 
 # FTP Exploitation
+
 ## Discovery
+Nmap FTP scan (screenshots/nmap_ftp_scan.png)
 An Nmap scan identified that the target system had FTP running on port 21. This indicated that file transfer services were available.
+
 ## Enumeration
 After identifying the FTP service (vsftpd 2.3.4), I gathered more information about the service and any CVES associated with how it was configured.
 ## Authentication Testing
@@ -61,6 +64,7 @@ During the phase of the lab, I investigated the SSH service running on port 22 o
 
   ### Process
   ## 1. Port Scanning with Nmap
+  Nmap scan (nmap_ssh_scan.png)
   Performed an Nmap scan to identify open ports and running services on the target machine.
   ## 2. Service Enumeration with Metasploit Framework (msfconsole)
   After identifying the SSH service, I used Metasploit (msfconsole) to search for relevant auxiliary modules that I could use to gather additional information about the SSH service.
