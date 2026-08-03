@@ -34,7 +34,7 @@ Created an isolated Host-only network between Kali Linux and Metasploitable 2 to
 # FTP Exploitation
 
 ## Discovery
-Nmap FTP scan (screenshots/nmap_ftp_scan.png) 
+Nmap FTP scan screenshots/nmap_ssh_scan.png
 An Nmap scan identified that the target system had FTP running on port 21. This indicated that file transfer services were available.
 
 ## Enumeration
