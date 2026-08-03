@@ -1,38 +1,52 @@
-# cybersecurity-home-lab
+# Metasploitable 2 Penetration Testing Lab
 Documenting my cybersecurity home lab, penetration testing practice, and networking projects.
 ## Overview
-Built a beginner penetration testing lab using Oracle VirtualBox.
-## Tools Used
-1. Kali Linux
-2. Metasploitable 2
-3. Oracle VirtualBox
-4. Nmap
-5. Metasploitable Framework
-(msfconsole)
-
+This project documents my penetration testing practice in an isolated virtual lab environment using Kali Linux and Metasploitable 2. The goal was to practice the  penetration testing methods, including reconnaissance, service enumeration, vulnerability identification, exploitation and documentation.
 ## Setup
-Created an isolated Host-only network between Kali Linux and Metasploitable 2 to safely perfome penetration testing exercises in a local lab environment.
+Created an isolated Host-only network between Kali Linux and Metasploitable 2 to safely perform penetration testing exercises in a local lab environment.
+
+
+
+## Lab Setup 
+### Environment
+- Kali Linux (Attacker Machine)
+- Metasploitable 2 (Target Machine)
+- VirtualBox (Virtualization Platform)
+
+## Tools Used
+1. Nmap
+2. Metasploit Framework (msfconsole)
+3. Auxiliary Modules
+4. SSH Client
+5. FTP Client
+6. Linux Command Line Tools
 
 ## Completed Tasks
-1. Installed Kali Linux VM
-2. Installed Metasploitable 2 VM
-3. Configured virtual networking
-4. Tested connectivity with ping
-5. Performed Nmap service enumeration.
+- Performed network reconnaissance using Nmap.
+- Identified open ports and running services.
+- Enumerated SSH and FTP services.
+- Used Metasploit modules for service testing
+- Tested authentication security in the lab environment
+- Documented findings and results
 
-## Lab Workflow
-1. Installed Oracle VirtualBox.
-2. Deployed Kali Linux.
-3. Deployed Metasploitable 2.
-4. Configured a Host-only network.
-5. Verified connectivity using `ping`.
-6. Performed service enumeration with `nmap -sV`
-7. Opened `msfconsole`
-8. Searched for a matching exploit using:
-   `search vsftpd 2.3.4`
-9. Reviewed the module configuration using:
-   `show options'
-10. Configured the required options and executed the module in the lab.
+
+
+
+### FTP Exploitation
+### Discovery
+An Nmap scan identified that the target system had FTP running on port 21. This indicated that file transfer services were available.
+## Enumeration
+After identifying the FTP service (vsftpd 2.3.4), I gathered more information about the service and any CVES associated with how it was configured.
+## Authentication Testing
+After finding a vulnerability that can be exploited, I launched Metasploitable 2 to test how the FTP service handled login attempts. 
+Results
+- Identified an active FTP service on port 21
+- Practiced FTP enumeration techniques
+- Gained experience assessing FTP authentication and service configuration.
+- Documented findings with screenshots and notes for future reference.
+
+
+
 
 
 ## SSH Exploitation
@@ -61,12 +75,16 @@ This demonstrated how attackers could potentially gain access to exposed service
 
 
 ## Skills Demonstrated 
-- Virtualization with Oracle VirtualBox
-- Linux command-line usage
-- Network Configuration 
-- Nmap service enumeration 
-- Metasploit Framework basics
-- Github documentation 
+- Network reconnaissance
+- Nmap scanning
+- Service enumeration
+- Metasploit Framework usage
+- Auxiliary module usage
+- Linux remote access
+- Security documentation
+- Vulnerability assessment methodology
+
+
 
 ## What I learned
-This project helped me understand how to build a penetration testing lab from scratch, identify services with Nmap, research vulnerabilities using Metasploit, and document my work using GitHub.
+This lab helped me understand the importance of reconnaissance and enumeration before doing exploitation. I learned how security professionals identify exposed services, analyze potential vulnerabilities, safely test the vulnerabilities, and document findings.
