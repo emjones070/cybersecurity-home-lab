@@ -2,12 +2,11 @@
 Documenting my cybersecurity home lab, penetration testing practice, and networking projects.
 ## Overview
 This project documents my penetration testing practice in an isolated virtual lab environment using Kali Linux and Metasploitable 2. The goal was to practice the  penetration testing methods, including reconnaissance, service enumeration, vulnerability identification, exploitation and documentation.
-## Setup
-Created an isolated Host-only network between Kali Linux and Metasploitable 2 to safely perform penetration testing exercises in a local lab environment.
 
 
 
 ## Lab Setup 
+Created an isolated Host-only network between Kali Linux and Metasploitable 2 to safely perform penetration testing exercises in a local lab environment.
 ### Environment
 - Kali Linux (Attacker Machine)
 - Metasploitable 2 (Target Machine)
@@ -29,7 +28,7 @@ Created an isolated Host-only network between Kali Linux and Metasploitable 2 to
 - Tested authentication security in the lab environment
 - Documented findings and results
 
-
+## Lab Exercises
 
 
 # FTP Exploitation
