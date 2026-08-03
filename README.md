@@ -34,6 +34,32 @@ Created an isolated Host-only network between Kali Linux and Metasploitable 2 to
    `show options'
 10. Configured the required options and executed the module in the lab.
 
+
+## SSH Exploitation
+### Overview
+During the phase of the lab, I investigated the SSH service running on port 22 of the Metasploitable 2 target machine. The goal was the identify the service, gather information through enumeration and test authentication security within an authorized lab environment.
+
+### Tools used
+- Kali Linux
+- Nmap
+- Metasploit Framework (msfconsole)
+- SSH Client
+- Password wordlists (for authorized credential testing)
+
+  ### Process
+  ## 1. Port Scanning with Nmap
+  Performed an Nmap scan to identify open ports and running services on the target machine.
+  ## 2. Service Enumeration with Metasploit Framework (msfconsole)
+  After identifying the SSH service, I used Metasploit (msfconsole) to search for relevant auxiliary modules that I could use to gather additional information about the SSH service.
+  ## 3. Authenticating testing
+  After gathering information about the SSH service, I performed password authentication testing in the isolated lab environment using authorized testing methods.
+  The purpose of this step was to show how weak credentials can impact remote access security.
+  ## 4. SSH Access Verification
+Once valid credentials were identified within the lab environment, I used Kali Linux to connect to the SSH service and verify remote access to the Metasploitable machine.
+This demonstrated how attackers could potentially gain access to exposed services when authentication security is weak.
+
+
+
 ## Skills Demonstrated 
 - Virtualization with Oracle VirtualBox
 - Linux command-line usage
